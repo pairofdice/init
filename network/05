@@ -1,5 +1,12 @@
 #!/bin/sh
+<<<<<<< HEAD
 # 5. Identify the IP address of the DNS that responds to
 # the following url: who.int
 
 nslookup who.int | grep Address | awk 'NR == 2 {print $2}'
+=======
+# 5. Identify the IP address of the DNS that responds to 
+# the following url: who.int
+#
+# man nslookup		Nslookup is a program to query Internet domain name servers.
+>>>>>>> 46e6fe9980fc8455e0dade9b3318bc81185a4b22

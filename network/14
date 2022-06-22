@@ -1,0 +1,4 @@
+# 14. What file contains the local DNS entries?
+# the Hosts file, and it can be used to override the default DNS information.
+
+/etc/hosts

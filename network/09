@@ -1,2 +1,4 @@
 #!/bin/sh
 # 9. Find the external IP of 42.fr
+
+nslookup 42.fr | grep Address | awk 'NR == 2 {print $2}'

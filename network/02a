@@ -3,4 +3,4 @@
 # (a) Identify broadcast address
 # The ifconfig utility is used to assign an address to a network interface and/or configure network interface parameters.
 
-ifconfig | grep broadcast | awk '/inet/ {print $6}'
+ifconfig | grep broadcast | awk '{print $6}'

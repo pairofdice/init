@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# Find the provider of who.int
+
+# man whois The whois utility looks up records in the databases
+#     maintained by several Network Information Centers (NICs).
+
+
+whois $(ping who.int -c 1 | awk 'NR == 1 {print $3}' | tr -d '():')

@@ -1,3 +1,4 @@
 #!/bin/sh
 # 3. Identify the MAC address of the Wi-Fi card
+# man networksetup - configuration tool for network settings in System Preferences.
 networksetup -listallhardwareports | grep Wi-Fi -A 2 | awk 'NR == 3 {print $3}'

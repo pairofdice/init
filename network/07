@@ -1,0 +1,11 @@
+#!/bin/sh
+
+#7. Query an external DNS server on the who.int domain name (ie.: google 8.8.8.8)
+
+# man nslookup
+# Non-interactive mode is used when the name or Internet
+#       address of the host to be looked up is given as the first
+#       argument. The optional second argument specifies the host
+#       name or address of a name server
+
+nslookup who.int 8.8.8.8

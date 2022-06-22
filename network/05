@@ -1,3 +1,5 @@
 #!/bin/sh
-# 5. Identify the IP address of the DNS that responds to 
+# 5. Identify the IP address of the DNS that responds to
 # the following url: who.int
+
+nslookup who.int | grep Address | awk 'NR == 2 {print $2}'

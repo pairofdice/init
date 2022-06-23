@@ -2,6 +2,6 @@
 # 7. Figure out the PID of the SSHD service.
 
 # The pgrep command finds processes by name and returns the PID for each match
-# ps aux | grep sshd | ...
-# cat /var/run/sshd.pid
+# ps aux | grep sshd
 
+cat /var/run/sshd.pid

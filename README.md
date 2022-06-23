@@ -11,6 +11,7 @@ With limited broadcast, an IP address is given as a destination. This IP address
 Technically, this broadcast should be sent to all the IP addresses that exist. However, it actually serves as an address for the broadcast within the network. This destination is always in its own network and can therefore be implemented in an Ethernet broadcast. A router does not forward such a packet.
 
 networksetup -listallhardwareports
+networksetup -setdnsservers Wi-Fi 8.8.8.8
 
 service sshd status
 apt-get install apache2
@@ -31,6 +32,7 @@ man networks
 man host.conf
 man resolv.conf
 man interfaces
+man lsof - list open files
 
 man awk
 man sed
@@ -43,4 +45,6 @@ DOING
 	network/ 10 11 13
 DONE
 	network/01 02a 02b 03 04 05 06 07 08 09 12 14 15
+	scripts/01
+	system/
 

@@ -1,5 +1,4 @@
 #!/bin/sh
 # 2. What command can you use to rename your system?
 
-hostname <newname>
-hostnamectl setsomethingsomething
+hostname newname

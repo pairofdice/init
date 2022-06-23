@@ -1,20 +1,8 @@
 #!/bin/sh
 # 5. Name the command that determines the state of the SSH service.
 
-# Use the ps command to list all the processes and filter the output using grep to check if the SSH process is running.
-ps aux | grep sshd
+# Use the ps command to list all the processes and filter the output
+# using grep to check if the SSH process is running.
+# ps aux | grep sshd
 
-#The following command will check if SSH is listening to port 22. If SSH is configured to listen to a different port, use that port instead.
-netstat -plant | grep :22
-# An alternative method to check open ports is checking the port file. The following command will print the list of all the open port files.
-lsof -i
-
-(sudo) service ssh status
-sudo systemctl status sshd
-service sshd status
-
-sudo systemctl stop sshd
-sudo service sshd stop
-
-sudo systemctl start sshd
-sudo service sshd start
+sudo service ssh status

@@ -1,3 +1,4 @@
+#!/bin/sh
 # 13. Thanks to the previous question and the reverse DNS find the name of your host
 # man dig
 #	-x for simplified reverse lookup
@@ -5,4 +6,5 @@
 # dig -x [address]
 # host [address]
 
-dig -x <ip>
+dig -x $(ipconfig getpacket en0 | grep yiaddr | awk '{print $3}')  | grep 'ANSWER SECTION' -A 2
+

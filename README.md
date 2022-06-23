@@ -34,17 +34,28 @@ man resolv.conf
 man interfaces
 man lsof - list open files
 
+    pidof: pidof – find the process ID of a running program.
+    pgrep: pgre – look up or signal processes based on name and other attributes.
+    ps: ps – report a snapshot of the current processes.
+    pstree: pstree – display a tree of processes.
+    ss: ss is used to dump socket statistics.
+    netstat: netstat is displays a list of open sockets.
+    lsof: lsof – list open files.
+    fuser: fuser – list process IDs of all processes that have one or more files open
+    systemctl: systemctl – Control the systemd system and service manager
+
 man awk
 man sed
 man grep
 
 TODO
-	system
 	scripts
 DOING
-	network/ 10 11 13
-DONE
-	network/01 02a 02b 03 04 05 06 07 08 09 12 14 15
-	scripts/01
+	network/	15
 	system/
+	scripts/
+DONE
+	network/	01 02 03 04 05 06 07 08 09 10 11 12 13 14
+	system/		01 02
+	scripts/
 

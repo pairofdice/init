@@ -1,0 +1,4 @@
+# 15. Make the intra.42.fr address reroute to 46.19.122.85
+
+1. open the /etc/hosts file
+	vim /etc/hosts

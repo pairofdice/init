@@ -1,5 +1,6 @@
 #!/bin/sh
 # 3. What file has to be modified to make it permanent?
 # Save and close the file and then verify it using the hostname or hostnamectl command.
+# with sudo 
 
-/etc/hosts
+/etc/hostname

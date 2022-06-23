@@ -1,0 +1,19 @@
+#!/bin/sh
+# 2. Identify and display the Ethernet interface characteristics:
+# (a) Identify broadcast address
+# The ifconfig utility is used to assign an address to a network 
+#	interface and/or configure network interface parameters.
+
+ifconfig | grep broadcast | awk '{print}'
+
+# (b) Identify all IP adresses which are part of the same subnet
+
+# in bash the $ stands for ‘substitute contents.’
+# $()   -evaluate commands and substitute the result in place of 
+#	what's in the ()
+# $(()) 	- evaluate arithmetically
+
+# man tr - The tr utility copies the standard input to the standard
+# output with substitution or deletion of selected characters.
+ping $(ifconfig en0 | grep broadcast | awk '{print $6}') -c 1 > \
+	 /dev/null && arp -ai en0 | awk '{print $2}' | tr -d '()'

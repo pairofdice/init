@@ -5,4 +5,9 @@
 # man whois The whois utility looks up records in the databases
 #     maintained by several Network Information Centers (NICs).
 
-whois $(ping who.int -c 1 | awk 'NR == 1 {print $3}' | tr -d '():') | grep OrgName | cut -f 2- -w
+# whois $(ping who.int -c 1 | awk 'NR == 1 {print $3}' | tr -d '():') | grep OrgName | cut -f 2-
+
+# whois for who.int just gives information on owner of the address but we can whois the ip and 
+#	get information on the service provider
+
+Cloudflare, Inc.

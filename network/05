@@ -5,4 +5,4 @@
 # also
 # host -t a who.int | cut -f 4 -w
 
-nslookup who.int | grep Address | awk 'NR == 2 {print $2}'
+nslookup who.int

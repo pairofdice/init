@@ -1,4 +1,10 @@
 #!/bin/sh
 # 9. Find the external IP of 42.fr
 
-nslookup 42.fr | grep Address | awk 'NR == 2 {print $2}'
+# with nslookup we can find the ip that corresponds to the address 
+# using a name server.
+# nslookup lists the information for the name server used first
+# then the answer for the query
+nslookup 42.fr 
+
+# 163.172.250.16

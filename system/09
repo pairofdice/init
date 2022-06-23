@@ -1,2 +1,6 @@
 #!/bin/sh
 # 9. What command lets you know who is connected to the System?
+# w
+# who
+# users
+# finger

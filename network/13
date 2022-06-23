@@ -2,4 +2,7 @@
 # man dig
 #	-x for simplified reverse lookup
 
+# dig -x [address]
+# host [address]
+
 dig -x <ip>

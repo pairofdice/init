@@ -1,2 +1,4 @@
 #!/bin/sh
 # 6. Name the command that reboots the SSH service.
+
+sudo service ssh restart

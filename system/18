@@ -1,2 +1,12 @@
 #!/bin/sh
 # 18. Find the command that kills ssh service
+#
+# ways to kill
+
+# The pgrep command finds processes by name and returns the PID for each match
+# pkill is one of the commands that can directly kill a background process, using the process name.
+# we can kill by the job ID:
+# jobs
+# kill %1    --- 1 being the job id
+# the killall command takes the name and, kills all processes with that name.
+# fg is a command used to bring a background process to the foreground. Then, we can simply stop the process by using Ctrl+C

@@ -2,14 +2,15 @@
 # 1. Get the list of the network interfaces of the machine without displaying any detail
 # for these interfaces. Only the list of names
 
-# The ifconfig utility is used to assign an address to a network interface 
+# The ifconfig utility is used to assign an address to a network interface
 #	and/or configure network interface parameters.
 # ifconfig -a | expand | cut -c 1-8 | uniq -u | awk '{print $1;}' | sed s/://
 # 	-a     display all interfaces which are currently available, even if down
 # 	expand expands tabs into space
 # 	uniq -u		only output unique lines
 # 	awk 		select and print only the first column with ' ' separator
-# 	sed 		replace : with nothing 
+# 	sed 		replace : with nothing
+
 # ifconfig -l
 # 	The -l flag may be used to list all available interfaces on the system,
 #      with no other additional information.

@@ -1,2 +1,7 @@
 #!/bin/sh
 # 4. What command gives you the time since your system was last booted?
+# uptime -s
+# who -b
+# uptime
+# last reboot | head -1
+uptime

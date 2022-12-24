@@ -1,11 +1,23 @@
 #!/bin/sh
 # 15. Find the command that kills the background command’s process
 
+sudo pkill tail
+
+
+# Find background processes:
+# jobs -l
+
+# The jobs utility shall display the status of jobs that were
+# started in the current shell environment
 
 # The pgrep command finds processes by name and returns the PID for each match
-# pkill is one of the commands that can directly kill a background process, using the process name.
+# pkill is one of the commands that can directly kill a 
+# background process, using the process name.
 # we can kill by the job ID:
 # jobs
 # kill %1    --- 1 being the job id
+
 # the killall command takes the name and, kills all processes with that name.
-# fg is a command used to bring a background process to the foreground. Then, we can simply stop the process by using Ctrl+C
+
+# fg is a command used to bring a background process to the foreground. Then, 
+# we can simply stop the process by using Ctrl+C

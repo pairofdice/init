@@ -1,6 +1,8 @@
 #!/bin/sh
 # 18. Find the command that kills ssh service
-#
+
+sudo pkill sshd
+
 # ways to kill
 
 # The pgrep command finds processes by name and returns the PID for each match

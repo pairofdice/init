@@ -6,5 +6,9 @@
 # dig -x [address]
 # host [address]
 
-dig -x $(ipconfig getpacket en0 | grep yiaddr | awk '{print $3}')  | grep 'ANSWER SECTION' -A 2
+# dig -x $(ipconfig getpacket en0 | grep yiaddr | awk '{print $3}')  | grep 'ANSWER SECTION' -A 2
+# or
+# nslookup 10.11.6.5
+
+c1r6p5.hive.fi
 

@@ -3,6 +3,6 @@
 # the following url: who.int
 
 # also
-# host -t a who.int | cut -f 4 -w
+# host -t a who.int | cut -d ' ' -f 4
 
 nslookup who.int

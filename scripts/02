@@ -1,2 +1,15 @@
 #!/bin/sh
 # 2. Write a script which delete an ACTIVE user on the VM.
+
+read -p "Who do you want to nuke? " USER
+read -p "Are you quite sure? yes/no " CONFIRMATION
+if [ "CONFIRMATION" == "yes" ]
+then
+	crontab -r -u $USER
+	killall -u $USER
+	userdel -r $USER
+else
+	echo "Just kidding! $USER is fine."
+	exit
+fi
+echo "$USER's processes killed, their home, mail and crontab tasks spool removed."

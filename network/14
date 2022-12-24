@@ -2,4 +2,4 @@
 
 # the Hosts file, and it can be used to override the default DNS information.
 
-/etc/hosts
+# /etc/hosts

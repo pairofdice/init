@@ -4,4 +4,4 @@
 # The du utility displays the file system block usage
 # for each file argument and for each directory in the
 # file hierarchy rooted in each directory argument.
-du -h /var/*
+sudo du -sh /var/*

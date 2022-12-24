@@ -2,4 +2,7 @@
 # 16. Find the service which makes it possible to run specific tasks
 #	following a regular schedule
 
-crontab
+cron
+
+# cron wakes up every minute and goes through crontabs checkings which tasks
+# should be ran

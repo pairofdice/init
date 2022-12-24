@@ -6,3 +6,6 @@
 # ps aux | grep sshd
 
 sudo service ssh status
+
+# or
+# /etc/init.d/ssh status

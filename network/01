@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # 1. Get the list of the network interfaces of the machine without displaying any detail
 # for these interfaces. Only the list of names
 

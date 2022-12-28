@@ -1,24 +1,16 @@
 #!/bin/bash
 # 3. Three’s a Charm. Write a script of you choice.
 
-planets=("mercure" "venus" "terre" "mars" "jupiter" "saturne" "uranus" "neptune"
-	"pluton")
-
-read -p "Hey! Hi! Which solar system planet would you like info on?
-Options are 	mercure, venus, terre, 
-		mars, jupiter, saturne, 
-		uranus, neptune, pluton
-: " body
-
-if [[ ! " ${planets[*]} " =~ " ${body} " ]]; then
-	echo "$body is not in the list"
-	exit 0
-fi
-
+echo "Hey! Hi! Which solar system planet would you like info on?"
+PS3="Enter a number: "
+select body in mercure venus terre mars jupiter saturne uranus neptune pluton;
+do
 curl -skX GET "https://api.le-systeme-solaire.net/rest/bodies/$body" \
 	-H "accept: application/json" | python3 -c 'import sys, json;
 json = json.load(sys.stdin)
 for k in json:
 	if "https" not in str(json[k]):
 		print("{0:<18}".format(k + ": ") + str(json[k]))
-	 '
+'
+break
+done

@@ -1,4 +1,5 @@
 # 1. In what file can you find the installed version of your Debian?
-
+# To transfer files to the VM vvvv
+# scp -P 54321 -r /Users/jsaarine/work/code/init/system jsaarine@10.11.203.111:
 # Debian version is listed in 
 /etc/debian_version

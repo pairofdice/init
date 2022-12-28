@@ -5,3 +5,5 @@
 # to start:
 
 tail -f /var/log/syslog &
+
+# NOTE: Doesn't seem to work through SSH connection

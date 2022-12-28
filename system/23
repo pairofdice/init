@@ -1,3 +1,13 @@
 #!/bin/sh
 # 23. Explain how connect yourself as new user. (With graphic session
 # and ssh session)
+
+Graphic session:
+type login
+type password
+hit enter
+
+ssh session:
+write ssh <username>@ip
+write password
+hit enter

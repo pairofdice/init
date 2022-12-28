@@ -17,4 +17,6 @@
 # GECOS, comment field, typically used to record general information about the 
 # account or its user(s) such as their real name and phone number. 
 
-cut -d: -f 1,3,6 /etc/passwd | tr ':' '\t'
+cut -d: -f 1,3,7 /etc/passwd | tr ':' '\t'
+
+# 6 instead of 7 lists user home directory

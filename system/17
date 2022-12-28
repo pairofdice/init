@@ -2,4 +2,4 @@
 # 17. Find the command that allows you to connect via ssh on the VM.
 # (In parallel with the graphic session)
 
-ssh user@ip -p port_n?
+ssh jsaarine@10.11.203.111 -p 54321

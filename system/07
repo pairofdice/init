@@ -3,11 +3,13 @@
 
 # The pgrep command finds processes by name and returns the PID for each match
 
-pgrep sshd
+cat /var/run/sshd.pid
 
+
+# ps aux | grep sbin/sshd
 # or
 # cat /var/run/sshd.pid
 # or 
-# ps aux | grep sshd
+# pgrep sshd 
 # or 
 # pgrep sshd

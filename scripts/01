@@ -19,4 +19,4 @@
 
 cut -d: -f 1,3,7 /etc/passwd | tr ':' '\t'
 
-# 6 instead of 7 lists user home directory
+# 6 instead of 7 lists user home directory, which is a path aswell ¯\_(ツ)_/¯

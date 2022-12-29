@@ -3,10 +3,10 @@
 
 read -p "Who do you want to nuke? " user
 read -p "Are you quite sure? yes/no " confirmation
-if [ $confirmation != "yes" ]
-then5j
-	pkill -u $user
+if [ $confirmation == "yes" ]
+then
 	crontab -r -u $user
+	pkill -u $user
 	userdel -rf $user
 else
 	echo "Just kidding! $user is fine."

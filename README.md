@@ -1,2 +1,2 @@
 # init
-Introduction to Linux and sysadmin through various challenges. 
+Introduction to Linux system and network admin through various challenges. 
